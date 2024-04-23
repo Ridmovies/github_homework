@@ -1,4 +1,2 @@
 fastapi==0.110.2
 SQLAlchemy==2.0.29
-httpx
-aiosqlite
