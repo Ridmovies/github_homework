@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from typing import List, Sequence
 
 from fastapi import FastAPI, HTTPException
-from sqlalchemy import select, update, column
+from sqlalchemy import column, select, update
 from sqlalchemy.exc import NoResultFound
 
 from database import Base, async_engine, session
@@ -75,4 +75,4 @@ async def add_recipe(recipe: RecipeIn) -> Recipe:
 
 
 # uvicorn main:app --host 0.0.0.0 --port 8000
-# isort --check --diff --profile black main.py
+# isort . --check-only --diff --profile black
