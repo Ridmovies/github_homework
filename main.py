@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from typing import List, Sequence
 
 from fastapi import FastAPI, HTTPException
-from sqlalchemy import select, update, column
+from sqlalchemy import column, select, update
 from sqlalchemy.exc import NoResultFound
 
 from database import Base, async_engine, session
