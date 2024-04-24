@@ -11,8 +11,7 @@ class BaseRecipe(BaseModel):
     description: Optional[str]
 
 
-class RecipeIn(BaseRecipe):
-    pass
+class RecipeIn(BaseRecipe): ...
 
 
 class RecipeOutShort(BaseModel):
